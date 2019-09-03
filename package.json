@@ -2,7 +2,7 @@
   "name": "burger-logger",
   "version": "1.0.0",
   "description": "Name the burgers, eat the burgers.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "node server.js"
   },
