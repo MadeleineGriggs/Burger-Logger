@@ -2,7 +2,7 @@
 
 var connection = require("../config/connection.js");
 
-// Print
+
 function printQMarks(num) {
     var arr = [];
   
@@ -14,7 +14,7 @@ function printQMarks(num) {
   }
   
   function objToSql(ob) {
-    // column1=value, column2=value2,...
+
     var arr = [];
   
     for (var key in ob) {
@@ -35,8 +35,7 @@ function printQMarks(num) {
       });
     },
   
-    // vals is an array of values that we want to save to cols
-    // cols are the columns we want to insert the values into
+
     create: function(table, cols, vals, cb) {
       var queryString = "INSERT INTO " + table;
   
@@ -57,8 +56,7 @@ function printQMarks(num) {
       });
     },
     
-    // objColVals would be the columns and values that you want to update
-    // an example of objColVals would be {name: panther, sleepy: true}
+
     update: function(table, objColVals, condition, cb) {
       var queryString = "UPDATE " + table;
   

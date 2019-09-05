@@ -9,9 +9,7 @@ router.get("/", function(req, res) {
 });
 
 router.get("/burgers", function (req, res) {
-    //Pass the burger data into the function
     burgers.all(function(burgerData) {
-      // wrapper for orm.js that using MySQL query callback will return burger_data, render to index with handlebar
       res.render("index", { burger_data: burgerData });
     });
   });
@@ -35,5 +33,5 @@ router.put("/burgers/:id", function(req, res) {
 
 
 
-// Export routes for server.js to use.
+// Export route for server.js.
 module.exports = router;
