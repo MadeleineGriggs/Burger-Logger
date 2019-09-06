@@ -18,11 +18,12 @@
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col text-center" class="task">
-			<div class="">
+		<div class="col text-center">
+		<h2 class="subtitle">Burgers That Can Be Eaten</h2>
+			<div>
 			  {{#each burger_data}}
 			  	{{#unless this.devoured}}
-				<div class>
+				<div>
 					<p>#{{this.id}}: {{this.burger_name}}
 					</p>
 				</div>
@@ -36,10 +37,14 @@
 			  {{/each}}
 			</div>
 		</div>
-		<div class="col text-center" class="task">
+		<div class="col text-center">
+		<h2 class="subtitle">Burgers That Have Been Eaten</h2>
 			  {{#each burger_data}}
 			  	{{#if this.devoured}}
-			  		<input class="form-control" type="text" placeholder="#{{this.id}} : {{this.burger_name}}" readonly>
+				  				<div>
+					<p>#{{this.id}}: {{this.burger_name}}
+					</p>
+			  		{{!-- <input class="form-control" type="text" placeholder="#{{this.id}} : {{this.burger_name}}" readonly> --}}
 				{{/if}}
 			  {{/each}}
 		</div>

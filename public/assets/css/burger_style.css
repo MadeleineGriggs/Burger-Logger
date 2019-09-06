@@ -25,6 +25,10 @@ body {
     margin-bottom: 2rem;
 }
 
+.subtitle {
+    font-family: var(--title-font);
+    margin-bottom: 1rem;
+}
 #top-bar h2{
     margin-bottom: 2rem;
     font-family: var(--title-font);
